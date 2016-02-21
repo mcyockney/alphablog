@@ -1,6 +1,15 @@
 <h1> Article Index</h1>
-<%= @articles.each do |a| %>
-
-    <p><%= a.title %></p>    
-
+<%= link_to "Create new article", new_article_path %>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>&nbsp;</th>
+    </tr>
+<% @articles.each do |a| %>
+    <tr>
+        <td><%= link_to a.title, article_path(a) %></td>
+        <td><%= link_to "edit", edit_article_path(a) %></td>
+        <td><%= link_to "delete", article_path(a), method: :delete, data: {confirm: "Are you sure?"} %></td>
+    </tr>
 <% end %>
+</table>

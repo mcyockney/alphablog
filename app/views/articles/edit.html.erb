@@ -1,0 +1,14 @@
+<h1> Edit Article</h1>
+<% if @article.errors.any? %>
+<h2>The following errors prevented the article being created</h2>
+<ul>
+    <% @article.errors.full_messages.each do |m| %>
+        <li><%= m %> </li>
+    <% end %>
+</ul>
+<% end %>    
+    
+
+<%= render 'form' %>
+
+<%= link_to "Index", articles_path %>
