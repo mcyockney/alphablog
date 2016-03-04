@@ -22,6 +22,35 @@ $navbar-default-bg:  #66ffc2;
     text-decoration: none;
 }
 
-.center {
+center {
     text-align: center;
+}
+
+paneled {
+    background-image: asset_url('wood-background.jpg');
+}
+
+jumbotron h1 {
+    letter-spacing: -3px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+}
+
+footer small {
+    float: left;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 15px;
 }

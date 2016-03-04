@@ -1,8 +1,17 @@
 
-
-<p><%= link_to "Blog", articles_path %></p>
-<p><%= link_to "About", about_path %></p>
-
-<div class="footer">
-  <p> &copy; M C Yockney <%= Date.today.year %></p>
+<div class="container">
+    <footer class="footer">
+      <small> 
+          Copyright &copy; M C Yockney <%= Date.today.year %>
+      </small>
+<nav>
+    <ul>
+        <li><%= link_to "Blog", articles_path %></li>
+        <li><%= link_to "About", about_path %></li>
+    </ul>
+</nav>
+      
+      
+    </footer>
 </div>
+
